@@ -86,4 +86,4 @@ believe, a fruitful new question about the plane Jacobian problem.
 
 *Prepared with substantial assistance from AI systems (Claude Fable 5, Anthropic;
 cross-checked with GPT-5.6-sol, OpenAI). All computational claims are machine-certified.
-Corrections welcome.*
+Corrections welcome: marcumail (at) gmail (dot) com.*
