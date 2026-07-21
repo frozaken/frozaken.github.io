@@ -92,6 +92,6 @@ counterexample as its classical shadow, whereas in dimension three quantization 
 with no corrections. Locating the obstruction that appears only in low dimension is, I
 believe, a fruitful new question about the plane Jacobian problem.
 
-*Prepared with substantial assistance from AI systems (Claude Fable 5, Anthropic;
+*Prepared with assistance from AI systems (Claude Fable 5, Anthropic;
 cross-checked with GPT-5.6-sol, OpenAI). All computational claims are machine-certified.
 Corrections welcome: marcumail (at) gmail (dot) com.*
