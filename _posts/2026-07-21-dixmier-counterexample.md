@@ -25,9 +25,11 @@ endomorphism of any Weyl algebra since Dixmier posed the problem in 1968.
 With $$u = 1 + x_1 x_2$$, Alpöge's map $$F = (F_1, F_2, F_3)$$ is
 
 $$
-F_1 = u^3 x_3 + x_2^2\,u\,(4 + 3 x_1 x_2), \qquad
-F_2 = x_2 + 3 x_1 u^2 x_3 + 3 x_1 x_2^2 (4 + 3 x_1 x_2), \qquad
-F_3 = 2 x_1 - 3 x_1^2 x_2 - x_1^3 x_3,
+\begin{aligned}
+F_1 &= u^3 x_3 + x_2^2\,u\,(4 + 3 x_1 x_2), \\
+F_2 &= x_2 + 3 x_1 u^2 x_3 + 3 x_1 x_2^2 (4 + 3 x_1 x_2), \\
+F_3 &= 2 x_1 - 3 x_1^2 x_2 - x_1^3 x_3,
+\end{aligned}
 $$
 
 with $$\det J = -2$$ identically and the explicit collision
@@ -40,8 +42,12 @@ $$
 Set $$N = -\tfrac{1}{2}\,\mathrm{adj}\,J = J^{-1}$$, a matrix of polynomials.
 
 > **Theorem.** The assignment
-> $$\varphi(\hat{x}_i) = F_i(\hat{x}_1, \hat{x}_2, \hat{x}_3), \qquad
-> \varphi(\partial_i) = \sum_{k=1}^{3} N_{ki}(\hat{x}_1, \hat{x}_2, \hat{x}_3)\,\partial_k$$
+> $$
+> \begin{aligned}
+> \varphi(\hat{x}_i) &= F_i(\hat{x}_1, \hat{x}_2, \hat{x}_3), \\
+> \varphi(\partial_i) &= \sum_{k=1}^{3} N_{ki}(\hat{x}_1, \hat{x}_2, \hat{x}_3)\,\partial_k
+> \end{aligned}
+> $$
 > extends to a $$\mathbb{C}$$-algebra endomorphism $$\varphi \colon A_3 \to A_3$$ which is
 > injective and not surjective. The Dixmier conjecture therefore fails for $$A_n$$ for
 > every $$n \ge 3$$.
