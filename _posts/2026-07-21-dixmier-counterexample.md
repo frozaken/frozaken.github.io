@@ -13,8 +13,14 @@ implies, through the classical implication $$\mathrm{DC}_3 \Rightarrow \mathrm{J
 that the Dixmier conjecture fails for the third Weyl algebra $$A_3$$: there is an
 injective, non-surjective $$\mathbb{C}$$-algebra endomorphism of $$A_3$$. The existence
 statement is immediate to experts. This note supplies what the observation does not,
-namely the explicit witness, which is to my knowledge the first explicit counterexample
-endomorphism of any Weyl algebra since Dixmier posed the problem in 1968.
+namely the explicit witness, with machine-checked certification.
+
+**Note added (July 21).** After this post first went up I learned of an
+[independent note by Pickhardt and an AI research agent](https://omniscienceproject.com/papers/an-explicit-counterexample-to-the-dixmier-conjecture-in-a-3-jfLENtXF),
+dated July 19, 2026, which carries out the same transfer, including an elegant proof
+that the pullback preserves differential order exactly. The construction is canonical
+and the overlap on the main theorem is complete; the Lean certification and the
+Poisson and symplectic corollaries below appear only here.
 
 **[Full write-up (PDF)]({{ '/assets/pdf/dixmier3.pdf' | relative_url }})** &middot;
 **[sympy certificate]({{ '/assets/dixmier3_check.py' | relative_url }})** &middot;
