@@ -41,16 +41,18 @@ $$
 
 Set $$N = -\tfrac{1}{2}\,\mathrm{adj}\,J = J^{-1}$$, a matrix of polynomials.
 
-> **Theorem.** The assignment
-> $$
-> \begin{aligned}
-> \varphi(\hat{x}_i) &= F_i(\hat{x}_1, \hat{x}_2, \hat{x}_3), \\
-> \varphi(\partial_i) &= \sum_{k=1}^{3} N_{ki}(\hat{x}_1, \hat{x}_2, \hat{x}_3)\,\partial_k
-> \end{aligned}
-> $$
-> extends to a $$\mathbb{C}$$-algebra endomorphism $$\varphi \colon A_3 \to A_3$$ which is
-> injective and not surjective. The Dixmier conjecture therefore fails for $$A_n$$ for
-> every $$n \ge 3$$.
+**Theorem.** *The assignment*
+
+$$
+\begin{aligned}
+\varphi(\hat{x}_i) &= F_i(\hat{x}_1, \hat{x}_2, \hat{x}_3), \\
+\varphi(\partial_i) &= \sum_{k=1}^{3} N_{ki}(\hat{x}_1, \hat{x}_2, \hat{x}_3)\,\partial_k
+\end{aligned}
+$$
+
+*extends to a $$\mathbb{C}$$-algebra endomorphism $$\varphi \colon A_3 \to A_3$$ which is
+injective and not surjective. The Dixmier conjecture therefore fails for $$A_n$$ for
+every $$n \ge 3$$.*
 
 The lift $$F \mapsto \varphi$$ is classical (Bass–Connell–Wright p. 297, crediting
 Vaserstein and Kac; van den Essen Ch. 10; Bavula
