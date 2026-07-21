@@ -107,10 +107,10 @@ bing_site_verification:  # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: Probably Probabilistic # blog_name will be displayed in your blog page
-blog_nav_title: blog # your blog must have a title for it to be displayed in the nav bar
-blog_description: Some thoughts on deep learning
-permalink: /blog/:year/:title/
+blog_name: # blog_name will be displayed in your blog page
+blog_nav_title: papers # your blog must have a title for it to be displayed in the nav bar
+blog_description:
+permalink: /papers/:year/:title/
 
 # Pagination
 pagination:
@@ -204,11 +204,11 @@ jekyll-archives:
     tag: archive-tag
     category: archive-category
   permalinks:
-    year: '/blog/:year/'
-    tag: '/blog/tag/:name/'
-    category: '/blog/category/:name/'
+    year: '/papers/:year/'
+    tag: '/papers/tag/:name/'
+    category: '/papers/category/:name/'
 
-display_tags: ['diffusion', 'python'] # this tags will be dispalyed on the front page of your blog
+display_tags: [] # this tags will be dispalyed on the front page of your blog
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar
