@@ -2,7 +2,7 @@
 layout: post
 title: "Symplectic, Poisson, and contact Keller counterexamples, machine-certified"
 date: 2026-07-21 12:00:00-0000
-description: "Three certified specimens built on Alpöge's Jacobian-conjecture counterexample: a symplectic Keller map on C^6, an explicit Poisson counterexample, the first strict-contact counterexample on C^7, plus formal rigidity of the map itself"
+description: "Three certified specimens built on Alpöge's Jacobian-conjecture counterexample: a symplectic Keller map on C^6, an explicit Poisson counterexample, the first strict-contact counterexample on C^7, plus a rigidity computation for the map itself"
 tags: jacobian-conjecture symplectic contact weyl-algebra lean
 categories: algebra
 ---
@@ -10,8 +10,9 @@ categories: algebra
 <p>Alp&ouml;ge's counterexample to the Jacobian conjecture in dimension three
 (<a href="https://x.com/__alpoge__/status/2079028340955197566">announced July 19, 2026</a>)
 settled an 87 year old question, and its consequences are still being worked out in real
-time. This post collects three explicit specimens I have built on top of the map in the
-days since, together with a structural fact about the map itself. Every computational
+time. This post is meant as the canonical package of algebraic, symplectic, and contact
+consequences of the map, written explicitly and machine-certified within days of the
+announcement, together with a rigidity computation about the map itself. Every computational
 claim below is certified twice: by exact computer algebra, and by machine-checked
 Lean&nbsp;4 / mathlib proofs with no <code>sorry</code> and a clean axiom audit.
 Full write-up: <a href="{{ '/assets/pdf/keller-counterexamples.pdf' | relative_url }}">PDF</a>
@@ -103,19 +104,28 @@ the first non-invertible polynomial strict contactomorphism of affine space. The
 frontier cases are open: \(\mathbb{C}^5\) would require a symplectic counterexample in
 two degrees of freedom, which is \(\mathrm{PC}_2\) territory.</p>
 
-<h2>4. Rigidity: locally, there is exactly one counterexample</h2>
+<h2>4. A rigidity computation</h2>
 
-<p>A structural fact about \(F\) itself: it admits no infinitesimal deformations
-beyond composition with automorphisms. Every first-order Keller deformation of a map
-with constant Jacobian is of the form \(A \circ F + J_F \cdot B\) with
-\(\mathrm{div}\,A = \mathrm{div}\,B = 0\), and pushing the obstruction calculus to
-fifth order (in exact arithmetic, independently at two primes) kills every direction
-outside the affine-composition orbit. In particular the one direction that survives
-fourth order, \(B = y\,(x/3, -2y/3, z)\), dies at order five. So within its degree
-range the counterexample is formally rigid modulo symmetries: locally, Alp&ouml;ge's
-map is the only one. Scripts for this computation are in the
-<a href="https://github.com/frozaken/dixmier3">repository</a>; this result is
-certified by exact modular computation rather than Lean.</p>
+<p>A structural indication about \(F\) itself, stated with its hypotheses on the
+table. Consider deformations of \(F\) within total degree at most 7 (the degree of
+\(F\)). Every first-order Keller deformation of a map with constant Jacobian is of
+the form \(A \circ F + J_F \cdot B\) with
+\(\mathrm{div}\,A = \mathrm{div}\,B = 0\), and the a priori integrable directions
+are the affine-composition ones. Pushing the obstruction calculus to order five, in
+exact arithmetic independently at two large primes, obstructs every direction outside
+that orbit tangent: most die at orders two or three, and the one survivor of order
+four, \(B = y\,(x/3, -2y/3, z)\), dies at order five.</p>
+
+<p>To be precise about what this is: a computation, not yet a theorem. It is bounded
+in degree, runs at two primes rather than in characteristic zero, and stops at finite
+obstruction order; the deformation functor and a characteristic-zero lifting argument
+are not written down here. What it supports is the conjecture that \(F\) is formally
+rigid modulo composition with automorphisms, which would mean that within its degree
+range there is, locally, no other counterexample. A careful theoremization is
+separate work in preparation. The scripts are in the
+<a href="https://github.com/frozaken/dixmier3">repository</a>, so the computation
+itself is reproducible; this section is certified by exact modular computation
+rather than Lean.</p>
 
 <h2>Certification</h2>
 
